@@ -1,1 +1,33 @@
-<h1>estamos en el login</h1>
+<h1>Login</h1>
+
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <form action="/auth/login" method="post">
+      <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+      <div class="form-floating">
+        <input
+          id="email"
+          type="email"
+          name="email"
+          class="form-control mb-2"
+          placeholder="ingrese correo"
+        />
+        <label for="email">correo</label>
+      </div>
+      <div class="form-floating">
+        <input
+          id="password"
+          type="password"
+          name="password"
+          class="form-control mb-2"
+          placeholder="ingrese pass"
+        />
+        <label for="password">contraseña</label>
+      </div>
+
+      <button class="btn btn-primary" type="submit">Iniciar Sesion</button>
+
+    </form>
+  </div>
+</div>
